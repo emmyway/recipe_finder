@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe & Meal Planner Hub</title>
+    <link rel="stylesheet" href="find_recipes.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="find_recipes.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Recipe & Meal Planner Hub</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+        <div class="search-container">
+            <input type="text" placeholder="Search">
+            <button type="submit">🔍</button>
+        </div>
+    </header>
+    <main>
+        <section class="recipe-search">
+            <h2>Find Recipes</h2>
+            <form>
+                <label for="ingredient">Enter an ingredient:</label>
+                <input type="text" id="ingredient" name="ingredient">
+                <button type="submit">Find Recipes</button>
+            </form>
+        </section>
+        <section class="recipe-results">
+            <h2>Recipes:</h2>
+            <p>Ingredients:</p>
+            <p>Instructions:</p>
+        </section>
+    </main>
+    <footer>
+        <button class="contact-us">Contact Us</button>
+    </footer>
+</body>
+</html>

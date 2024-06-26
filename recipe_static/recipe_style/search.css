@@ -50,7 +50,7 @@ nav ul li a:hover {
 
 .search-container {
     display: flex;
-    align-items: center;
+    align-items: right;
     margin-top: 20px;
 }
 

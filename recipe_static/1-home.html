@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe & Meal Planner Hub</title>
-    <link rel="stylesheet" href="login_page.css">
+    <link rel="stylesheet" href="recipe_style/home.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="login_page.js" defer></script>
+    <script src="home_page.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,16 +27,10 @@
         </div>
     </header>
     <main>
-        <section class="login-form">
-            <h2>Login</h2>
-            <form>
-                <label for="email">Email address:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-                <button type="submit">Login</button>
-            </form>
-            <p>Don't have an account? <a href="#">Register here</a></p>
+        <section class="recipe-gallery">
+            <div class="recipe-item large"></div>
+            <div class="recipe-item small"></div>
+            <div class="recipe-item small"></div>
         </section>
     </main>
     <footer>

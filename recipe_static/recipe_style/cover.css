@@ -8,7 +8,7 @@ body {
 
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     background-color: #ff4d6d; /* Bright pink/red gradient start */
@@ -25,7 +25,7 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 0;
     display: flex;
     gap: 20px;
 }
@@ -51,7 +51,6 @@ nav ul li a:hover {
 .search-container {
     display: flex;
     align-items: center;
-    margin-top: 20px;
 }
 
 .search-container input {
@@ -76,43 +75,33 @@ main {
     padding: 40px;
     background-color: #f9f9f9;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 80px);
 }
 
-.recipe-search {
+.cover {
     text-align: center;
+}
+
+.cover-content {
     margin-bottom: 40px;
 }
 
-.recipe-search h2 {
+.cover-content h2 {
     font-size: 36px;
     color: #ff4d6d;
     margin-bottom: 20px;
 }
 
-#recipe-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#recipe-form label {
+.cover-content p {
     font-size: 18px;
     color: #666;
-    margin-bottom: 10px;
-}
-
-#recipe-form input {
-    padding: 10px;
-    font-size: 16px;
-    border: 2px solid #ff4d6d;
-    border-radius: 20px;
     margin-bottom: 20px;
-    outline: none;
 }
 
-#recipe-form button {
+.cover-content .get-started {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
@@ -123,34 +112,16 @@ main {
     transition: background-color 0.3s, color 0.3s;
 }
 
-#recipe-form button:hover {
+.cover-content .get-started:hover {
     background-color: #ff6f91;
 }
 
-.recipe-results {
-    text-align: left;
-    width: 100%;
-    max-width: 600px;
-}
-
-.recipe-results h3 {
-    font-size: 28px;
-    color: #ff4d6d;
-    margin-bottom: 20px;
-}
-
-.recipe-list {
-    list-style: none;
-    padding: 0;
-}
-
-.featured-images {
+.cover-images {
     display: flex;
     gap: 20px;
-    margin-top: 40px;
 }
 
-.featured-images img {
+.cover-images img {
     width: 200px;
     height: 200px;
     object-fit: cover;

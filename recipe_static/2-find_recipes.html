@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe & Meal Planner Hub</title>
-    <link rel="stylesheet" href="home_page.css">
+    <link rel="stylesheet" href="recipe_style/f_recipes.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="home_page.js" defer></script>
+    <script src="find_recipes.js" defer></script>
 </head>
 <body>
     <header>
@@ -27,10 +27,18 @@
         </div>
     </header>
     <main>
-        <section class="recipe-gallery">
-            <div class="recipe-item large"></div>
-            <div class="recipe-item small"></div>
-            <div class="recipe-item small"></div>
+        <section class="recipe-search">
+            <h2>Find Recipes</h2>
+            <form>
+                <label for="ingredient">Enter an ingredient:</label>
+                <input type="text" id="ingredient" name="ingredient">
+                <button type="submit">Find Recipes</button>
+            </form>
+        </section>
+        <section class="recipe-results">
+            <h2>Recipes:</h2>
+            <p>Ingredients:</p>
+            <p>Instructions:</p>
         </section>
     </main>
     <footer>

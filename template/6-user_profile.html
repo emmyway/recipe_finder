@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recipe & Meal Planner Hub - User Profile</title>
-    <link rel="stylesheet" href="user_profile.css">
+    <link rel="stylesheet" href="../recipe_static/recipe_style/user_profile.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="user_profile.js" defer></script>
@@ -30,7 +30,11 @@
         <section class="profile">
             <h2>User Profile</h2>
             <div class="profile-info">
-                <img src="assets/pexels-gustavo-fring-3984730.jpg" alt="User Profile Picture" class="profile-pic">
+                <div class="profile-pic-container">
+                    <img src="assets/pexels-gustavo-fring-3984730.jpg" alt="User Profile Picture" class="profile-pic">
+                    <input type="file" id="profile-pic-upload" class="profile-pic-upload" accept="image/*">
+                    <label for="profile-pic-upload">Change Picture</label>
+                </div>
                 <div class="profile-details">
                     <h3>Username: JohnDoe</h3>
                     <p>Email: johndoe@example.com</p>
@@ -42,9 +46,18 @@
         <section class="favorite-recipes">
             <h3>Favorite Recipes</h3>
             <div class="recipes-grid">
-                <img src="assets/pexels-mvdheuvel-2284166.jpg" alt="Recipe 1">
-                <img src="assets/pexels-kei-scampa-1201427-4687067.jpg" alt="Recipe 2">
-                <img src="assets/pexels-polina-tankilevitch-3872373.jpg" alt="Recipe 3">
+                <div class="recipe-card">
+                    <img src="assets/pexels-mvdheuvel-2284166.jpg" alt="Recipe 1">
+                    <h4>Recipe 1</h4>
+                </div>
+                <div class="recipe-card">
+                    <img src="assets/pexels-kei-scampa-1201427-4687067.jpg" alt="Recipe 2">
+                    <h4>Recipe 2</h4>
+                </div>
+                <div class="recipe-card">
+                    <img src="assets/pexels-polina-tankilevitch-3872373.jpg" alt="Recipe 3">
+                    <h4>Recipe 3</h4>
+                </div>
                 <!-- More favorite recipes -->
             </div>
         </section>

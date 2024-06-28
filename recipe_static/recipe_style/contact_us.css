@@ -9,13 +9,16 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
+    padding: 20px 40px;
+    background-color: #ff4d6d; /* Bright pink/red gradient start */
     color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #ff4d6d, #ff6f91); /* Gradient effect */
 }
 
-header .logo h1 {
+.logo h1 {
     margin: 0;
+    font-size: 28px;
 }
 
 nav ul {
@@ -23,15 +26,25 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    gap: 20px;
 }
 
 nav ul li {
-    margin-right: 20px;
+    display: inline;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #ff4d6d;
 }
 
 .search-container {
@@ -40,17 +53,31 @@ nav ul li a {
 }
 
 .search-container input {
-    padding: 5px;
+    padding: 10px;
+    font-size: 16px;
     border: none;
-    border-radius: 3px;
-    margin-right: 10px;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
 }
 
 main {
+    padding: 40px;
+    background-color: #f9f9f9;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 20px;
+    flex-direction: column;
+    height: calc(100vh - 80px);
 }
 
 .contact {
@@ -58,29 +85,33 @@ main {
     max-width: 600px;
     width: 100%;
     background-color: #fff;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact h2 {
-    font-size: 36px;
+    font-size: 32px;
     margin-bottom: 20px;
+    color: #ff4d6d;
 }
 
 .contact p {
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 20px;
+    color: #666;
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     text-align: left;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
 }
 
 .form-group input, 
@@ -89,27 +120,39 @@ main {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group textarea:focus {
+    border-color: #333;
 }
 
 button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #28a745;
+    padding: 12px 20px;
+    background-color: #ff4d6d;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 20px;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%;
+    max-width: 200px;
     margin-top: 10px;
 }
 
 button[type="submit"]:hover {
-    background-color: #218838;
+    background-color: #ff6f91;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #ff4d6d; /* Bright pink/red gradient start */
     color: #fff;
+    background: linear-gradient(135deg, #ff4d6d, #ff6f91); /* Gradient effect */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }

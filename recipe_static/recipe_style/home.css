@@ -64,7 +64,7 @@ nav ul li a:hover {
     outline: none;
 }
 
-search-container button {
+.search-container button {
     padding: 10px 15px;
     font-size: 16px;
     border: none;

@@ -4,11 +4,14 @@ body {
     padding: 0;
     color: #333;
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     background-color: #ff4d6d; /* Bright pink/red gradient start */
@@ -25,7 +28,7 @@ header {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 20px 0 0 0;
+    margin: 0;
     display: flex;
     gap: 20px;
 }
@@ -51,7 +54,6 @@ nav ul li a:hover {
 .search-container {
     display: flex;
     align-items: center;
-    margin-top: 20px;
 }
 
 .search-container input {
@@ -75,6 +77,7 @@ nav ul li a:hover {
 main {
     padding: 40px;
     background-color: #f9f9f9;
+    flex: 1;
 }
 
 .recipe-gallery {
@@ -106,6 +109,7 @@ footer {
     background-color: #ff4d6d; /* Bright pink/red gradient start */
     color: #fff;
     background: linear-gradient(135deg, #ff4d6d, #ff6f91); /* Gradient effect */
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .contact-us {

@@ -8,7 +8,7 @@ body {
 
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     background-color: #ff4d6d; /* Bright pink/red gradient start */
@@ -62,7 +62,7 @@ nav ul li a:hover {
     outline: none;
 }
 
-search-container button {
+.search-container button {
     padding: 10px 15px;
     font-size: 16px;
     border: none;

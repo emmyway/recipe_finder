@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe & Meal Planner Hub</title>
-    <link rel="stylesheet" href="../recipe_static/recipe_style/f_recipes.css">
+    <title>Recipe & Meal Planner Hub - Recipe Search</title>
+    <link rel="stylesheet" href="recipe_style/search.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="../recipe_static/recipe_js/find_recipe.js" defer></script>
+    <script src="search_page.js" defer></script>
 </head>
 <body>
     <header>
@@ -17,8 +17,8 @@
         <nav>
             <ul>
                 <li><a href="1-home.html">Home</a></li>
-                <li><a href="2-find_recipes.html">Recipes</a></li>
-                <li><a href="3-login.html">Login</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="login.html">Login</a></li>
             </ul>
         </nav>
         <div class="search-container">
@@ -29,20 +29,26 @@
     <main>
         <section class="recipe-search">
             <h2>Find Recipes</h2>
-            <form>
+            <form id="recipe-form">
                 <label for="ingredient">Enter an ingredient:</label>
                 <input type="text" id="ingredient" name="ingredient">
                 <button type="submit">Find Recipes</button>
             </form>
+            <div class="recipe-results">
+                <h3>Recipes:</h3>
+                <div class="recipe-list">
+                    <!-- Recipe results will be dynamically inserted here -->
+                </div>
+            </div>
         </section>
-        <section class="recipe-result">
-            <h2>Recipes:</h2>
-            <p>Ingredients:</p>
-            <p>Instructions:</p>
+        <section class="featured-images">
+            <img src="assets/pexels-any-lane-5946083.jpg" alt="Featured Recipe 1">
+            <img src="assets/pexels-philippe-alamazani-508356-20778690.jpg" alt="Featured Recipe 2">
+            <img src="assets/pexels-sarah-chai-7262911.jpg" alt="Featured Recipe 3">
         </section>
     </main>
     <footer>
-        <a class="contact-us" href="contact_us.html">Contact Us</a>
+        <button class="contact-us">Contact Us</button>
     </footer>
 </body>
 </html>

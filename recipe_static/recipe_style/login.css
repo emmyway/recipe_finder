@@ -8,7 +8,7 @@ body {
 
 header {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
     background-color: #ff4d6d; /* Bright pink/red gradient start */
